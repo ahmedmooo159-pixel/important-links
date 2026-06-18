@@ -1,0 +1,108 @@
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: transparent; }
+  .page { max-width: 480px; margin: 0 auto; padding: 2rem 1rem 3rem; font-family: var(--font-sans); }
+  .avatar-wrap { display: flex; flex-direction: column; align-items: center; gap: 1rem; margin-bottom: 2rem; }
+  .avatar { width: 88px; height: 88px; border-radius: 50%; background: linear-gradient(135deg, #1D9E75, #534AB7); display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 500; color: #fff; overflow: hidden; border: 3px solid var(--color-border-tertiary); }
+  .name { font-size: 22px; font-weight: 500; color: var(--color-text-primary); text-align: center; }
+  .bio { font-size: 14px; color: var(--color-text-secondary); text-align: center; margin-top: 4px; }
+  .links { display: flex; flex-direction: column; gap: 12px; }
+  .link-card { display: flex; align-items: center; gap: 14px; padding: 14px 18px; border-radius: var(--border-radius-lg); border: 0.5px solid var(--color-border-tertiary); background: var(--color-background-primary); text-decoration: none; color: var(--color-text-primary); transition: background 0.15s, transform 0.12s; cursor: pointer; }
+  .link-card:hover { background: var(--color-background-secondary); transform: translateY(-1px); }
+  .link-card:active { transform: scale(0.98); }
+  .icon-wrap { width: 40px; height: 40px; border-radius: var(--border-radius-md); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .icon-wrap i { font-size: 20px; }
+  .ic-fb { background: #E6F1FB; color: #185FA5; }
+  .ic-li { background: #E6F1FB; color: #0C447C; }
+  .ic-port { background: #E1F5EE; color: #0F6E56; }
+  .ic-wa { background: #EAF3DE; color: #3B6D11; }
+  .ic-proj { background: #EEEDFE; color: #534AB7; }
+  .ic-admin { background: #FAECE7; color: #993C1D; }
+  .ic-gh { background: #F1EFE8; color: #444441; }
+  .link-text { flex: 1; }
+  .link-label { font-size: 13px; color: var(--color-text-secondary); margin-bottom: 2px; }
+  .link-title { font-size: 15px; font-weight: 500; }
+  .arrow { color: var(--color-text-secondary); font-size: 16px; }
+  .section-label { font-size: 11px; font-weight: 500; color: var(--color-text-tertiary); letter-spacing: 0.08em; text-transform: uppercase; margin: 1.5rem 0 0.5rem; }
+</style>
+
+<div class="page">
+  <h2 class="sr-only">Ahmed Mourad — Link in Bio Page</h2>
+  <div class="avatar-wrap">
+    <div class="avatar">AM</div>
+    <div>
+      <div class="name">Ahmed Mourad</div>
+      <div class="bio">Frontend Developer · Web & UI</div>
+    </div>
+  </div>
+
+  <div class="links">
+    <div class="section-label">Portfolio & Work</div>
+
+    <a class="link-card" href="https://ahmedmooo159-pixel.github.io/portfolio/" target="_blank">
+      <div class="icon-wrap ic-port"><i class="ti ti-briefcase" aria-hidden="true"></i></div>
+      <div class="link-text">
+        <div class="link-label">Portfolio</div>
+        <div class="link-title">My Projects & Work</div>
+      </div>
+      <i class="ti ti-arrow-right arrow" aria-hidden="true"></i>
+    </a>
+
+    <a class="link-card" href="https://ahmedmooo159-pixel.github.io/finalmenu/" target="_blank">
+      <div class="icon-wrap ic-proj"><i class="ti ti-device-desktop" aria-hidden="true"></i></div>
+      <div class="link-text">
+        <div class="link-label">Live Project</div>
+        <div class="link-title">Final Menu App</div>
+      </div>
+      <i class="ti ti-arrow-right arrow" aria-hidden="true"></i>
+    </a>
+
+    <a class="link-card" href="https://ahmedmooo159-pixel.github.io/finalmenu/admin.html" target="_blank">
+      <div class="icon-wrap ic-admin"><i class="ti ti-settings" aria-hidden="true"></i></div>
+      <div class="link-text">
+        <div class="link-label">Admin Panel</div>
+        <div class="link-title">Dashboard Access</div>
+      </div>
+      <i class="ti ti-arrow-right arrow" aria-hidden="true"></i>
+    </a>
+
+    <a class="link-card" href="https://github.com/ahmedmooo159-pixel" target="_blank">
+      <div class="icon-wrap ic-gh"><i class="ti ti-brand-github" aria-hidden="true"></i></div>
+      <div class="link-text">
+        <div class="link-label">GitHub</div>
+        <div class="link-title">Open Source Code</div>
+      </div>
+      <i class="ti ti-arrow-right arrow" aria-hidden="true"></i>
+    </a>
+
+    <div class="section-label">Connect</div>
+
+    <a class="link-card" href="https://www.facebook.com/share/1chNVD18vN/?mibextid=wwXIfr" target="_blank">
+      <div class="icon-wrap ic-fb"><i class="ti ti-brand-facebook" aria-hidden="true"></i></div>
+      <div class="link-text">
+        <div class="link-label">Facebook</div>
+        <div class="link-title">Follow me on Facebook</div>
+      </div>
+      <i class="ti ti-arrow-right arrow" aria-hidden="true"></i>
+    </a>
+
+    <a class="link-card" href="https://www.linkedin.com/in/ahmed-mourad-879194414" target="_blank">
+      <div class="icon-wrap ic-li"><i class="ti ti-brand-linkedin" aria-hidden="true"></i></div>
+      <div class="link-text">
+        <div class="link-label">LinkedIn</div>
+        <div class="link-title">Professional Profile</div>
+      </div>
+      <i class="ti ti-arrow-right arrow" aria-hidden="true"></i>
+    </a>
+
+    <a class="link-card" href="https://wa.me/201091728680" target="_blank">
+      <div class="icon-wrap ic-wa"><i class="ti ti-brand-whatsapp" aria-hidden="true"></i></div>
+      <div class="link-text">
+        <div class="link-label">WhatsApp</div>
+        <div class="link-title">Chat with me</div>
+      </div>
+      <i class="ti ti-arrow-right arrow" aria-hidden="true"></i>
+    </a>
+  </div>
+</div>
